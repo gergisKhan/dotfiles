@@ -38,6 +38,8 @@ if exists("&undodir")
 endif
 " Highlight current line
 set cursorline
+" One more please
+set virtualedit=onemore
 " Make tabs as wide as two spaces
 set tabstop=2
 " Convert tabs to spaces
