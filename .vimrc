@@ -26,6 +26,10 @@ set noeol
 " Respect modeline in files
 set modeline
 set modelines=4
+" File-type
+filetype on
+filetype plugin on
+filetype indent on
 " Enable line numbers
 set number
 " Enable syntax highlighting
