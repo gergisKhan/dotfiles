@@ -21,6 +21,10 @@
 [merge]
   tool = vimdiff
   log = true
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
 [push]
   default = matching
 [core]
