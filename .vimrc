@@ -83,6 +83,10 @@ set shortmess=atI
 set showmode
 " Show the filename in the window titlebar
 set title
+" Split to bottom
+set splitbelow
+" Split to right
+set splitright
 " Show the (partial) command as it’s being typed
 set showcmd
 " Show matching brackets
