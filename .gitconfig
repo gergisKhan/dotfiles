@@ -2,7 +2,7 @@
   name = Johannes Troeger
   email = johannes.troeger@gmail.com
 [alias]
-  lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [color]
   ui = auto
 [color "branch"]
