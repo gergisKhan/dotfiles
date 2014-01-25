@@ -13,6 +13,8 @@
   Bundle 'bling/vim-airline'
   Bundle 'airblade/vim-gitgutter'
   Bundle 'edkolev/tmuxline.vim'
+  filetype plugin indent on
+
   set clipboard=unnamed
   " Enhance command-line completion
   set wildmenu
