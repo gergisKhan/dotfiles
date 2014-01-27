@@ -51,6 +51,8 @@
   if exists("&undodir")
     set undodir=~/.vim/undo
   endif
+  " Automatic reload buffers if changes
+  set autoread
   " Highlight current line
   set cursorline
   " One more please
