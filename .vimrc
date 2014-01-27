@@ -1,10 +1,8 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """""""""""""""""""""""""""""""""""""""""""""""""
   " Make Vim more useful
   set nocompatible
-  " Use the OS clipboard by default (on versions compiled with `+clipboard`)
-
   filetype off
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
@@ -13,8 +11,12 @@
   Bundle 'bling/vim-airline'
   Bundle 'airblade/vim-gitgutter'
   Bundle 'edkolev/tmuxline.vim'
+  Bundle 'christoomey/vim-tmux-navigator'
+  " Plugin / Bundle Settings
   filetype plugin indent on
-
+  let g:airline_powerline_fonts = 1
+  let g:molokai_original=1
+  " Use the OS clipboard by default (on versions compiled with `+clipboard`)
   set clipboard=unnamed
   " Enhance command-line completion
   set wildmenu
@@ -102,7 +104,6 @@
   set showmatch
   set matchtime=3
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Visuals
 """""""""""""""""""""""""""""""""""""""""""""""""
@@ -115,7 +116,6 @@
   " Set Colorscheme
   set background=dark
   colorscheme molokai
-  let g:molokai_original=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Keybindings
