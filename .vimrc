@@ -12,6 +12,7 @@
   Bundle 'airblade/vim-gitgutter'
   Bundle 'edkolev/tmuxline.vim'
   Bundle 'christoomey/vim-tmux-navigator'
+  Bundle 'myusuf3/numbers.vim'
   " Plugin / Bundle Settings
   filetype plugin indent on
   let g:airline_powerline_fonts = 1
