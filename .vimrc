@@ -12,7 +12,6 @@
   Bundle 'airblade/vim-gitgutter'
   Bundle 'edkolev/tmuxline.vim'
   Bundle 'christoomey/vim-tmux-navigator'
-  Bundle 'myusuf3/numbers.vim'
   " Plugin / Bundle Settings
   filetype plugin indent on
   let g:airline_powerline_fonts = 1
@@ -56,6 +55,8 @@
   set autoread
   " Highlight current line
   set cursorline
+  " Use relative numbers line according to cursor position
+  set relativenumber
   " One more please
   set virtualedit=onemore
   " Make tabs as wide as two spaces
