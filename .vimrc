@@ -105,7 +105,8 @@
   " Show matching brackets
   set showmatch
   set matchtime=3
-
+  " Syntax Highlighting by filetypes
+  autocmd BufNewFile,BufRead *.json set ft=javascript
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Visuals
 """""""""""""""""""""""""""""""""""""""""""""""""
