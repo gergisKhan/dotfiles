@@ -1,4 +1,4 @@
 selectp -t 0              # Select pane 0
-splitw -v -p 30           # Split pane 0 vertically by 50%
+splitw -v -p 20           # Split pane 0 vertically by 50%
 selectp -t 0              # Select pane 0
 
