@@ -12,10 +12,13 @@
   Bundle 'airblade/vim-gitgutter'
   Bundle 'edkolev/tmuxline.vim'
   Bundle 'christoomey/vim-tmux-navigator'
+  Bundle 'Shutnik/jshint2.vim'
   " Plugin / Bundle Settings
   filetype plugin indent on
   let g:airline_powerline_fonts = 1
   let g:molokai_original=1
+  let jshint2_save = 1
+  let jshint2_read = 1
   " Use the OS clipboard by default (on versions compiled with `+clipboard`)
   set clipboard=unnamed
   " Enhance command-line completion
