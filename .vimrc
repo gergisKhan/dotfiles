@@ -12,13 +12,15 @@
   Bundle 'airblade/vim-gitgutter'
   Bundle 'edkolev/tmuxline.vim'
   Bundle 'christoomey/vim-tmux-navigator'
-  Bundle 'Shutnik/jshint2.vim'
+  Bundle 'scrooloose/syntastic'
+  Bundle 'othree/html5.vim'
+  Bundle 'mileszs/ack.vim'
+
   " Plugin / Bundle Settings
   filetype plugin indent on
   let g:airline_powerline_fonts = 1
   let g:molokai_original=1
-  let jshint2_save = 1
-  let jshint2_read = 1
+  let g:syntastic_ignore_files = ['.ejs', '.html', '.scss', '.css', '.coffee']
   " Use the OS clipboard by default (on versions compiled with `+clipboard`)
   set clipboard=unnamed
   " Enhance command-line completion
@@ -58,8 +60,8 @@
   set autoread
   " Highlight current line
   set cursorline
-  " Use relative numbers line according to cursor position
-  set relativenumber
+  " Highlight current column
+  set cursorcolumn
   " One more please
   set virtualedit=onemore
   " Make tabs as wide as two spaces
@@ -70,6 +72,8 @@
   set shiftwidth=2
   set softtabstop=2
   set smarttab
+  set nocindent
+  set smartindent
   " Show “invisible” characters
   set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
   set list
@@ -111,7 +115,7 @@
   set showmatch
   set matchtime=3
   " Syntax Highlighting by filetypes
-  autocmd BufNewFile,BufRead *.json set ft=javascript
+  " autocmd BufNewFile,BufRead *.json set ft=javascript
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Visuals
 """""""""""""""""""""""""""""""""""""""""""""""""
