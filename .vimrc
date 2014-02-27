@@ -52,12 +52,10 @@
   set scrolloff=9999
   " Enable syntax highlighting
   syntax on
-  " Centralize backups, swapfiles and undo history
-  set backupdir=~/.vim/backups
-  set directory=~/.vim/swaps
-  if exists("&undodir")
-    set undodir=~/.vim/undo
-  endif
+  " Disable whole backup stuff
+  set nobackup
+  set nowritebackup
+  set noswapfile
   " Automatic reload buffers if changes
   set autoread
   " Highlight current line
