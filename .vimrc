@@ -48,6 +48,8 @@
   set modelines=4
   " Enable line numbers
   set number
+  " Try to set Cursor always in the middle of the screen
+  set scrolloff=9999
   " Enable syntax highlighting
   syntax on
   " Centralize backups, swapfiles and undo history
