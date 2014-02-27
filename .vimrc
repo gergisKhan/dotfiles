@@ -138,6 +138,10 @@
   nnoremap  <leader>ev :vsp $MYVIMRC<cr>
   " Source .vimrc explitly
   nnoremap  <leader>sv :source $MYVIMRC<cr>
+  " disable esc
+  inoremap  <esc> <nop>
+  " use jk instead of esc
+  inoremap  jk <esc>
   " disabling arrow keys in normal and insert mode
   nnoremap  <up> <nop>
   nnoremap  <down> <nop>
