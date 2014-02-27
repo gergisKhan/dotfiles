@@ -116,6 +116,21 @@
   set matchtime=3
   " Syntax Highlighting by filetypes
   " autocmd BufNewFile,BufRead *.json set ft=javascript
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Functions and Auto Commands
+""""""""""""""""""""""""""""""""""""""""""""""""
+  " does what it says, strips trailing whitespaces
+  function! StripTrailingWhitespace()
+    normal mZ
+    let l:chars = col("$")
+    %s/\s\+$//e
+    if (line("'Z") != line(".")) || (l:chars != col("$"))
+      echo "Trailing whitespace stripped\n"
+    endif
+    normal `Z
+  endfunction
+  " autocmd on BufWritePre
+  autocmd BufWritePre * :call StripTrailingWhitespace()
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Visuals
 """""""""""""""""""""""""""""""""""""""""""""""""
